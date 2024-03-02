@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.header h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(28, 235, 28);
+    font-family: bold;
+    text-shadow: 0px 6px 12px green;
+}

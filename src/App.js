@@ -3,6 +3,7 @@ import Board from "./components/board/Board.js" ;
 import React, { useState } from "react";
 import ScoreBoard from './components/scoreBoard/ScoreBoard.js';
 import Reset from './components/reset/Reset.js';
+import Header from './components/header/Header.js';
 
 function App() {
 
@@ -69,6 +70,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <ScoreBoard scores={scores} xplaying={xPlaying} />
       <Board board={board} onClick={gameOver ? resetBoard : handleBoxClick} />
       <Reset resetBoard={resetBoard}/>
