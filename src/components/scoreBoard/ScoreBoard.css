@@ -1,0 +1,46 @@
+.scoreboard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 20rem;
+    font-size: 1.75rem;
+    font-weight: bold;
+    background-color: hsla(0 10% 20% / .4);
+    padding: 1rem 2rem;
+    margin: 3rem auto;
+    border-radius: 6px;
+    border: 2px solid green;
+    box-shadow: 0px 0px 9px green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.score {
+    width: 100%;
+    text-align: center;
+    padding: .5rem 0;
+}
+
+.x-score {
+    color: Aqua;
+    border-bottom: 5px solid aqua;
+    transition: all 240ms ease-in;
+
+}
+
+.o-score {
+    color: yellow;
+    border-bottom: 5px solid yellow;
+    transition: all 240ms ease-in;
+}
+
+.inactive {
+    border-bottom: 5px solid transparent;
+}
+
+
+@media screen and (max-width: 448px) {
+    .scoreboard{
+        width: 17.4rem;
+    }
+}

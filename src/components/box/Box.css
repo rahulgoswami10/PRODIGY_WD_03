@@ -1,0 +1,44 @@
+.box {
+    background-color: hsla(0 10% 15% / .8);
+    backdrop-filter: blur(.85rem);
+    border: none;
+    border: 1px solid green;
+    outline: none;
+    border-radius: 6px;
+  /*  box-shadow: 0px 0px 8px #888; */
+    box-shadow: 0px 0px 10px green;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    line-height: 5rem;
+    margin: 0.5rem;
+    padding: 5px 10px;
+}
+
+.x {
+    color: aqua;
+}
+
+.o {
+    color: yellow;
+}
+
+.box:hover {
+    box-shadow: 0px 0px 25px greenyellow;
+    transition: all 120ms ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 448px) {
+    .box{
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+
+    .box:hover {
+        box-shadow: none;
+    }
+}
